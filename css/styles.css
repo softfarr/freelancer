@@ -18,13 +18,45 @@
 
 /*  Fin */
 
-h1 {
+/*  Selector de elemento. Se aplica solo a los h1    */
+.titulo {
     text-align: center;
     color: blue;
     text-transform: capitalize;
     font-size: 3.8rem;
 }
 
-span {
+/*  Selector de elemento. Es mas específico. Se aplica solo a los span que están dentro de, o pertenezcan a un h1.    */
+.titulo span {
     font-size: 2rem;
 }
+
+/*  Selector de clase. Se aplica solo a las etiquetas con el atributo class="cliente". 
+    Son reutilizables dentro del mismo archivo.    */
+    .cliente {
+        color: beige;
+    }
+
+/*  Selector de Id. Se aplica solo a la etiqueta con el atributo id="cliente". 
+    No son reutilizables dentro del mismo archivo. Son únicos dentro del mismo archivo.    */
+    #cliente {
+        color: beige;
+    }
+
+/*  Selector de atributo. Se aplica solo a la etiqueta con el atributo src="heroe.png".    */
+    [src="heroe.png"] {
+        color: beige;
+    }
+
+/*  Selector de clase en combinación de descendentes. Se aplica solo a las etiquetas hijas con el 
+    atributo class="nombre" cuyo padre tenga el atributo class="cliente".     */
+    .cliente .nombre {
+        color: beige;
+    }
+
+/*  Selector de clase en combinación de descendentes para todos los hijos. Se aplica a todos los párrafos hijos
+    cuyo padre tenga el atributo class="cliente".     */
+    .cliente > p {
+        color: beige;
+    }
+
