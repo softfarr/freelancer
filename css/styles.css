@@ -1,5 +1,30 @@
+/*  Inicio  */
+
+    /*
+        Hack para "normalizar" el tamaño de los pixeles y poderlos expresar en rem de manera fácil
+
+        Tener en cuenta que 1 rem = 10px
+
+        N O   T O C A R ! !
+    */
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+/*  Fin */
+
 h1 {
     text-align: center;
     color: blue;
     text-transform: capitalize;
+    font-size: 3.8rem;
+}
+
+span {
+    font-size: 2rem;
 }
